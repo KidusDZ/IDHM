@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 li {
-  @apply text-[#f8f9fa] font-Overpass hover:text-[#F79022];
+  @apply md:text-black text-[#f8f9fa] font-Overpass hover:text-[#F79022];
 }
 .glass {
-  background: linear-gradient(135deg, #a1c9ee, #c6bdbe);
+  background: linear-gradient(135deg, #f79022, #0e6db4);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   border-radius: full;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 0px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
