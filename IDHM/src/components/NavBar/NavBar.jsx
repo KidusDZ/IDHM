@@ -2,7 +2,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { BsFillTelephoneFill } from 'react-icons/bs';
-import logo from './Logo.png';
+import logo from './IDHM Logooo.png';
 import './NavBar.css';
 
 function NavBar() {
@@ -12,10 +12,10 @@ function NavBar() {
   };
 
   return (
-    <div className=' flex bg-black bg-opacity-50'>
-      <nav className='flex flex-row w-full h-20 justify-start mr-52 text-white p-6 '>
+    <div className=' flex glass shadow-2xl md:bg-white '>
+      <nav className='flex  flex-row w-full h-20 justify-start mr-52  p-6 '>
         <ul className='hidden gap-6 md:flex'>
-          <li className='  w-28 ml-24 mr-[500px]  '>
+          <li className='  w-36 -mt-4 ml-24 mr-[500px]  '>
             <a href='/'>
               <img src={logo} />
             </a>
@@ -48,13 +48,20 @@ function NavBar() {
       <div
         className='absolute m-8 ml-4 z-10 text-2xl cursor-pointer flex  md:hidden'
         onClick={handleNav}>
-        {!nav1 ? <AiOutlineClose size={25} /> : <GiHamburgerMenu />}
+        {!nav1 ? (
+          <AiOutlineClose className=' text-[#CFCFCF]' size={25} />
+        ) : (
+          <div className='bg-black bg-opacity-50 p-2 text-lg rounded-3xl flex text-[#CFCFCF] gap-2 font-Overpass transition-all duration-100 hover:text-Bilos-primary hover:scale-110 ease-linear cursor-pointer'>
+            <GiHamburgerMenu size={22} />
+            MENU
+          </div>
+        )}
       </div>
       <div
         className={
           !nav1
-            ? 'fixed left-0 top-0 w-[85%] md:hidden bg-gray-600 h-full  ease-in-out duration-500 '
-            : 'ease-in-out duration-500 fixed hidden'
+            ? 'fixed left-0 top-0 w-[85%] md:hidden bg-black bg-opacity-50 h-full   '
+            : 'ease-in duration-500 fixed  hidden'
         }>
         <ul className=' pt-2  text-[#DCAD95] uppercase'>
           <li className=' ml-[30%] w-40 m-4 mb-8  '>

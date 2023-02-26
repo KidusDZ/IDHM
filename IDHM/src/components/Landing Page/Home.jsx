@@ -11,21 +11,26 @@ function Home() {
         <div className='fixed  z-10'>
           <NavBar />
         </div>
-        <div className=' flex-wrap '>
+        <div className=' flex justify-center '>
           <div className='flex-col text-[#f8f9fa] font-Dosis mt-72 ml-[10%] md:ml-[10%]'>
-            <h1 className='  mb-2 md:text-8xl text-6xl'>
+            <h1 className=' flex justify-center mb-2 md:text-8xl text-6xl'>
               IDHM ETHIOPIA
             </h1>
-            <h1 className=' text-3xl md:text-4xl text-gray-700'>
+            <h1 className=' text-3xl flex justify-center md:text-3xl text-[#CFCFCF]'>
               Home of Humanitarians
             </h1>
-            <div className='flex-wrap md:flex font-Overpass  my-5'>
-              <button className='bg-[#F79022] flex p-3  md:mr-10 border-2 hover:text-[#F79022] border-[#F79022] hover:bg-opacity-0'>
+            <div className='flex-wrap flex justify-center md:flex font-Overpass  my-5'>
+              <button
+                className=' bg-opacity-5 bg-[#F79022] flex p-3 mb-5 md:mb-0 md:mr-10 
+              border-[1px] text-[#F79022] border-[#F79022] hover:transition-all hover:ease-in-out hover:delay-75 border-opacity-50 hover:bg-opacity-20 hover:text-white'>
                 <MdSlowMotionVideo size={25} className='mr-2' />
                 Watch Our Video
               </button>
-              <button className=' flex bg-[#0E6DB4] p-3 mr-10 border-2 hover:text-[#0E6DB4] border-[#0E6DB4] hover:bg-opacity-0'>
-                <GoPerson size={20} className='mr-2' />
+              <button
+                className=' flex bg-opacity-5 bg-[#0E6DB4] p-3 mr-10 border-opacity-50  text-[#0E6DB4] 
+                hover:bg-opacity-20 hover:transition-all hover:ease-in-out hover:delay-75
+              border-[#0E6DB4] border-[1px]  hover:text-white'>
+                <GoPerson size={20} className='mr-2 ' />
                 Become A Volunteer
               </button>
             </div>
