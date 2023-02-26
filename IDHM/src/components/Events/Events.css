@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.eventCard {
+  @apply mt-20 shadow-2xl justify-center bg-white md:m-4 flex-col  relative;
+}
+.eventPicture {
+  @apply w-full;
+}
+.eventText {
+  @apply flex-col md:py-1 py-2 md:px-2 pb-3 w-[80%] h-fit  bg-white m-8 sticky -mt-0  md:-mt-14;
+}
