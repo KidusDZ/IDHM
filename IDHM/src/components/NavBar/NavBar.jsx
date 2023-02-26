@@ -1,7 +1,6 @@
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
-import { BsFillTelephoneFill } from 'react-icons/bs';
 import logo from './IDHM Logooo.png';
 import './NavBar.css';
 
@@ -12,9 +11,9 @@ function NavBar() {
   };
 
   return (
-    <div className=' flex glass shadow-2xl md:bg-white '>
-      <nav className='flex  flex-row w-full h-20 justify-start mr-52  p-6 '>
-        <ul className='hidden gap-6 md:flex'>
+    <div className=' flex fixed  z-10  shadow-sm shadow-inherit'>
+      <nav className='landscape:lg:flex hidden  glass flex-row w-screen h-20 justify-start mr-52  p-6 '>
+        <ul className=' gap-6 flex '>
           <li className='  w-36 -mt-4 ml-24 mr-[500px]  '>
             <a href='/'>
               <img src={logo} />
@@ -46,12 +45,14 @@ function NavBar() {
       </nav>
 
       <div
-        className='absolute m-8 ml-4 z-10 text-2xl cursor-pointer flex  md:hidden'
+        className='absolute m-8 ml-4 z-10 text-2xl cursor-pointer flex  landscape:lg:hidden'
         onClick={handleNav}>
         {!nav1 ? (
           <AiOutlineClose className=' text-[#CFCFCF]' size={25} />
         ) : (
-          <div className='bg-black bg-opacity-50 p-2 text-lg rounded-3xl flex text-[#CFCFCF] gap-2 font-Overpass transition-all duration-100 hover:text-Bilos-primary hover:scale-110 ease-linear cursor-pointer'>
+          <div
+            className='bg-black bg-opacity-50 p-2 text-lg rounded-3xl 
+          flex text-[#CFCFCF] gap-2 font-Overpass transition-all duration-100  hover:scale-110 ease-linear cursor-pointer'>
             <GiHamburgerMenu size={22} />
             MENU
           </div>
@@ -60,10 +61,10 @@ function NavBar() {
       <div
         className={
           !nav1
-            ? 'fixed left-0 top-0 w-[85%] md:hidden bg-black bg-opacity-50 h-full   '
-            : 'ease-in duration-500 fixed  hidden'
+            ? 'fixed overflow-scroll left-0 top-0 w-[85%] landscape:lg:hidden bg-gray-500 bg-opacity-50 h-full   '
+            : 'ease-in-out duration-500 fixed  hidden'
         }>
-        <ul className=' pt-2  text-[#DCAD95] uppercase'>
+        <ul className=' pt-2 text-[#DCAD95] uppercase'>
           <li className=' ml-[30%] w-40 m-4 mb-8  '>
             <a href='/'>
               <img src={logo} />

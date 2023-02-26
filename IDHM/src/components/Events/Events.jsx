@@ -9,7 +9,7 @@ import eventsList from './EventsData';
 
 function Events() {
   return (
-    <div className='h-screen  p-10 md:p-20 md:grid md:gap-y-12 md:grid-cols-3'>
+    <div className='h-screen  p-10 sm:p-20 sm:grid sm:gap-y-12 landscape:lg:grid-cols-3'>
       {eventsList.map((event) => (
         <div className='eventCard glass '>
           <a href='' className='eventPicture'>
