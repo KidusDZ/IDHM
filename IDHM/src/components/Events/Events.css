@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .eventCard {
-  @apply mt-20 shadow-2xl justify-center bg-white md:m-4 flex-col  relative;
+  @apply mt-20 shadow-2xl justify-center bg-white md:m-4 flex-col;
 }
 .eventPicture {
   @apply w-full;

@@ -8,7 +8,16 @@ module.exports = {
         Dosis: ['Dosis', 'sans-serif'],
         Overpass: ['Overpass', 'sans-serif'],
       },
+      colors: {
+        idhm: {
+          blue: '#0E6DB4',
+          orange: ' #F79022',
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    // ...
+    require('tailwind-scrollbar'),
+  ],
 };
